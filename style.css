@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    font-family: 'Rubik', sans-serif;
+}
+#navbar{
+    background-color: #f9f9f9;
+}
+#logo{
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+#logo span{
+    color: #e7e716;
+}
+#list li a{
+    transition: 0.5s ease;
+}
+#list li a{
+    font-size: 18px;
+    color: black;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+#list li a:hover{
+    background-color: #e7e716;
+    transition: 0.5s ease;
+}
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/background\ img.png');
+    background-size: cover;
+}
+.content{
+    text-align: center;
+    padding-top: 230px;
+}
+.content h3{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px black;
+}
+.content h3 span{
+    color: #e7e716;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.content p{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.content a{
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.content a:hover{
+    color: black;
+}
+.change::after{
+    content: ' ';
+    color: #e7e716;
+    font-weight: 600;
+    animation:change 20s infinite linear;
+}
+@keyframes change{
+    0%{content:"Italiju";}
+    10%{content:"Španiju";}
+    20%{content:"Meksiko";}
+    30%{content:"Kinu";}
+    40%{content:"Indiju";}
+    50%{content:"Pakistan";}
+    60%{content:"Tursku";}
+    70%{content:"Francusku";}
+    80%{content:"Sjedinjene Države";}
+    90%{content:"Nemačku";}
+    100%{content:"Ujedninjeno kraljevstvo";}
+}
+
+.rezervacije{
+    background-color: #f9f9f9;
+}
+.rezervacije h1{
+    padding-top: 15px;
+    text-shadow: 0px 1px 1px black;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.rezervacije form input, textarea{
+    color: black;
+    box-shadow: 0px 5px 5px -6px black;
+    resize: none;
+}
+.rezervacije .submit{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e7e716;
+    font-weight: 500;
+    font-size: 17px;
+    border-style: none;
+}
+
+.ponude h1{
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.ponude .card{
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(0,0,0,0.2) 0px 4px 12px;
+}
+.ponude .card img{
+    border-radius: 5px;
+}
+.ponude .card h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.ponude .card .card-body{
+    background-color: transparent;
+}
+.ponude .card p{
+    font-size: 15px;
+}
+.checked{
+    color: #e7e716;
+}
+.ponude .card h6{
+    font-size: 20px;
+}
+.ponude .card a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f5f549;
+    color: black;
+    border-radius: 5px;
+}
+
+.usluge{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.usluge h1{
+    text-shadow: 0px 1px 1px black;
+}
+.usluge .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.usluge .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.usluge .card h3{
+    font-weight: 600;
+}
+.usluge .card{
+    text-align: center;
+}
+
+.galerija h1{
+    text-shadow: 0px 1px 1px black;
+}
+.galerija .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.galerija .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.galerija .card img:hover{
+    transform: scale(1.1);
+}
+
+.mi{
+    background: #f9f9f9;
+}
+.mi h1{
+    text-shadow: 0px 1px 1px black;
+}
+.mi .card{
+    border-radius: 10px;
+}
+.mi .card img{
+    border-radius: 10px;
+}
+.mi h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.mi p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+
+#footer{
+    width: 100%;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #e7e716;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #e7e716;
+}
+
+@media (max-width:850px){
+    #home{
+        background-position: 50%;
+    }
+    .content h1 {
+        font-size: 55px;
+    }
+}
+
+@media (min-width:1500px){
+    #logo{
+        font-size: 40px;
+    }
+    #list li a{
+        font-size: 25px;
+    }
+    #home{
+        height: 93vh;
+    }
+    .content{
+        padding-top: 350px;
+    }
+    .content h1 {
+        font-size: 95px;
+    }
+    .content h3{
+        font-size: 53px;
+    }
+    .content p{
+        font-size: 25px;
+    }
+    .content a{
+        font-size: 25px;
+    }
+    .rezervacije h1{
+        font-size: 50px;
+    }
+    .rezervacije form input, textarea::placeholder{
+        font-size: 25px;
+    }
+    .rezervacije .submit{
+        font-size: 25px;
+    }
+    .ponude h1{
+        font-size: 50px;
+    }
+    .ponude .card h3{
+        font-size: 35px;
+    }
+    .ponude .card h3{
+        font-size: 35px;
+    }
+    .ponude .card p{
+        font-size: 25px;
+    }
+    .ponude .card h6{
+        font-size: 25px;
+    }
+    .ponude .card a{
+        font-size: 22px;
+    }
+    .usluge h1{
+        padding-top: 10px;
+        font-size: 50px;
+    }
+    .usluge .card i{
+        font-size: 110px;
+    }
+    .usluge .card h3{
+        font-size: 40px;
+    }
+    .usluge .card p{
+        font-size: 20px;
+    }
+    .galerija h1 {
+        padding-top: 10px;
+        font-size: 50px;
+    }
+    .galerija .card img{
+        height: 330px;
+    }
+    .mi h1{
+        padding-top: 10px;
+        font-size: 50px;
+    }
+    .mi h2{
+        font-size: 40px;
+    }
+    .mi p{
+        font-size: 25px;
+    }
+    #about-btn{
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #about-btn:hover{
+        width: 270px;
+    }
+    #footer h1{
+        font-size: 60px;
+    }
+    #footer p{
+        font-size: 25px;
+    }
+    .social-links a i{
+        font-size: 35px;
+    }
+}

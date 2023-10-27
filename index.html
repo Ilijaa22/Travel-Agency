@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d1d6cc37c8.js" crossorigin="anonymous"></script>
+    <title>Travel</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid px-lg-5">
+            <a href="#" class="navbar-brand" id="logo"><span>T</span>ravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav ms-auto" id="list">
+                    <li class="nav-item px-1">
+                        <a href="index.html" class="nav-link active">Početna</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#rezervacije" class="nav-link">Rezervacije</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#ponude" class="nav-link">Ponude</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#usluge" class="nav-link">Usluge</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#galerija" class="nav-link">Galerija</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#mi" class="nav-link">O nama</a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="content">
+            <h3 data-translate="title">Dobrodošli u <span>T</span>ravel</h3>
+            <h1>Poseti <span class="change"></span></h1>
+            <p>Započnite svoje nezaboravno putovanje s nama - doživite svet kroz naše oči!</p>
+            <a href="#rezervacije">Rezerviši mesto</a>
+        </div>
+    </section>
+    <section class="rezervacije" id="rezervacije">
+        <div class="container-fluid px-lg-5">
+            <div class="main-txt mb-4">
+                <h1 class="text-center">Vaše Rezervacije</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="images/book-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                   <form action="#">
+                    <input type="text" class="form-control mb-4" placeholder="Gde želite da putujete?" required>
+                    <input type="number" class="form-control mb-4" placeholder="Koliko osoba putuje?"  required>
+                    <input type="date" class="form-control mb-4" placeholder="Od">
+                    <input type="date" class="form-control mb-4" placeholder="Do">
+                    <textarea class="form-control mb-4" id=""  rows="10" placeholder="Ostavite Vaše ime i detalje."></textarea>
+                    <input type="submit" value="Rezerviši" class="submit" required>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ponude" id="ponude">
+        <div class="container-fluid px-lg-5">
+            <div class="main-txt text-center mt-5">
+                <h1>Naše ponude</h1>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/uk.png" alt="">
+                        <div class="card-body">
+                            <h3>Ujedinjeno Kraljevstvo</h3>
+                            <p>Doživite priču kroz istoriju i kulturu Ujedinjenog Kraljevstva, gde se tradicija i modernost sjedinjuju u nezaboravnom iskustvu putovanja.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#book">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/france.png" alt="">
+                        <div class="card-body">
+                            <h3>Francuska</h3>
+                            <p>Okusite čaroliju Francuske, zemlje ljubavi, umetnosti i gastronomije, gde svaki trenutak postaje jedinstveno iskustvo.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#rezervacije">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/pakistan.png" alt="">
+                        <div class="card-body">
+                            <h3>Pakistan</h3>
+                            <p>Otkrijte čudesne pejzaže i bogatu kulturnu baštinu Pakistana, gde se avantura susreće s gostoljubivošću, stvarajući nezaboravna putovanja.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#rezervacije">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/italy.png" alt="">
+                        <div class="card-body">
+                            <h3>Italija</h3>
+                            <p>Uživajte u ukusima, umetnosti i strastvenom načinu života Italije, gde svaki trenutak postaje putovanje za sva čula.</p><br>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#rezervacije">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/india.png" alt="">
+                        <div class="card-body">
+                            <h3>Indija</h3>
+                            <p>Istinite boje, ukusi i čarolija Indije čekaju da budu otkriveni. Putujte kroz vreme dok se uranjate u ovu zemlju bogatu kulturom i duhovnošću.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#rezervacije">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="card">
+                        <img src="images/us.png" alt="">
+                        <div class="card-body">
+                            <h3>Sjedinjene Države</h3>
+                            <p>"Uplovite u beskrajnu avanturu i raznolikost Sjedinjenih Američkih Država, gde svaki putnik može pronaći svoju jedinstvenu priču."</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <h6 class="py-2">Cena:<strong>  $500</strong></h6>
+                                <a href="#rezervacije">Rezerviši odmah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="usluge" id="usluge">
+        <div class="container-fluid px-lg-5">
+            <div class="main-txt text-center mb-3">
+              <h1>Usluge</h1>
+            </div>
+            <div class="row py-3">
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-hotel"></i>
+                  <div class="card-body">
+                    <h3>Pristupačni hoteli</h3>
+                    <p>Naša agencija za putovanja vam nudi raznovrsne opcije pristupačnih hotela kako biste uživali u nezaboravnom putovanju bez prekoračenja vašeg budžeta.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-utensils"></i>
+                  <div class="card-body">
+                    <h3>Hrana i piće</h3>
+                    <p>Upotpunite svoje putovanje vrhunskim iskustvom hrane i pića zahvaljujući našim preporukama i partnerstvima s najboljim restoranima i vinarijama na odredištu.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-bullhorn"></i>
+                  <div class="card-body">
+                    <h3>Dobri vodiči</h3>
+                    <p>Naši stručni vodiči agencije za putovanja su tvoj ključ za istraživanje i razumevanje svakog odredišta, pružajući ti nezaboravna iskustva i dublje uvide tokom putovanja.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3">
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-globe-asia"></i>
+                  <div class="card-body">
+                    <h3>Put oko sveta</h3>
+                    <p>Istražite čudesni svet u jednom nezaboravnom putovanju oko sveta uz našu agenciju, pružajući vam priliku da doživite raznolikost kultura, ukusa i čarolija koje naš svet nudi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-plane"></i>
+                  <div class="card-body">
+                    <h3>Bezbedno putovanje</h3>
+                    <p>Vaša sigurnost je naš prioritet. Naša agencija za putovanja osigurava da svako putovanje bude bezbedno i udobno, pružajući vam mir uma i slobodu da uživate u svim čarima putovanja.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <i class="fas fa-hiking"></i>
+                  <div class="card-body">
+                    <h3>Nezaboravne avanture</h3>
+                    <p>Naša agencija za putovanja stvara nezaboravne avanture koje će vam ostati urezane u sećanju zauvek, pružajući vam priliku za istraživanje sveta na način koji nikada nećete zaboraviti.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="galerija" id="galerija">
+        <div class="container-fluid px-lg-5">
+          <div class="main-txt text-center mb-5">
+            <h1>Galerija</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g1.png" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g2.png" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g3.png" alt="" height="230px">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g4.png" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g5.png" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/g6.png" alt="" height="230px">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="mi" id="mi">
+        <div class="container-fluid px-lg-5">
+          <div class="main-txt text-center">
+            <h1>O nama</h1>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 py-3 py-md-0">
+              <div class="card">
+                <img src="images/about-img.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+              <h2>Kratka istorija naše agencije</h2>
+              <p class="py-4">Agencija 'Travel' je osnovana 1995. godine s ciljem da pruži personalizovane putničke usluge i nezaboravna iskustva svojim klijentima. Kroz godine rada, postala je sinonim za kvalitetno putovanje i pouzdane aranžmane, ostvarujući brojne uspešne priče i stvarajući lojalne klijente širom sveta.</p>
+              <button id="about-btn">Pročitaj više</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h1><span>T</span>ravel</h1>
+        <p>Vaša avantura počinje jednim klikom - pridružite nam se na društvenim mrežama danas!</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+        <div class="copyright">
+          <p>&copy;Ilija Živadinović</p>
+        </div>
+    </footer>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
